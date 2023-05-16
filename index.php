@@ -55,7 +55,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="SUPER/style.css">
 
 	</head>
 	<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
