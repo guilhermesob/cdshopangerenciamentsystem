@@ -67,7 +67,19 @@ h1 {text-align: center;}
             <input type="text" class="form-control pl-3" name="pesquisa" placeholder="procurar musicas aqui">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
-          <input type="hidden" name="nome" value="nome">
+          <div style='position:absolute;margin-left:250px;margin-top:-52px'>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:20px;border:1px solid #555;float: left;margin:2px">
+          <label>Nome </label>
+            <input type="radio" name="nome" value="nome">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Artista </label>
+            <input type="radio" name="nome" value="artista">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Gênero</label>
+            <input type="radio" name="nome" value="genero">
+          </div></div>
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
@@ -147,7 +159,7 @@ echo"</li>";
 </div>
 <div>
 <label style="margin-left: 30px;color:#00f">Cliente</label>
-<input type="radio" name="tipo" value="cliente" checked>
+<input type="radio" name="tipo" value="cliente">
 <label style="margin-left: 30px;color:#f00">Administrador</label>
 <input type="radio" name="tipo" value="admin">
 </div>
@@ -176,3 +188,41 @@ echo"</li>";
 		</div>
 	</body>
 </html>
+
+            <label style="margin-left: 20px;color:#0000ff">Nome</label>
+      <input style="border-radius:10px;background-color:#6666ff" type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div style="margin:3px">
+      <label style="margin-left: 25px;color:#0000ff">Email</label>
+      <input style="border-radius:10px;background-color:#6666ff" type="e-mail" name="email" id="email" placeholder="Digite seu email" required>
+    </div>
+    <div style="margin:3px">
+      <label style="margin-left: 20px;color:#0000ff">Senha</label>
+      <input style="border-radius:10px;background-color:#6666ff" type="password" name="senha" id="floatingInput" placeholder="Digite sua senha" required>
+    </div>
+    <div style="margin:3px">
+      <label style="color:#0000ff">Telefone</label>
+      <input style="border-radius:10px;background-color:#6666ff" type="int" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+    </div>
+    <div style="margin:3px">
+      <label style="margin-left: 37px;color:#0000ff">CPF</label>
+      <input style="border-radius:10px;background-color:#6666ff" type="password" name="cpf" id="floatingInput" placeholder="Digite seu CPF" required>
+    </div>
+    <!-- <div style="margin:3px"> -->
+      <div style="width:110px;height:25px;background-color:#5555ff;border-radius:10px;border:1px solid #ff0000;float: left;margin:4px;text-align: center">
+      <label>cliente</label>
+      <input type="radio" name="tipo" value="cliente">
+    </div>
+    <div style="width:120px;height:25px;background-color:#5555ff;border-radius:10px;border:1px solid #ff0000;float: left;margin:2px">
+    <label>Administrador</label>
+    <input type="radio" name="tipo" value="admin">
+  </div>
+    </div>
+    <!-- <div style="margin:4px"> -->
+
+      <!-- <button style="width:300px;height:30px;background-color:#6666ff;border-radius:10px;color:#ff0000">Enviar</button> -->
+
+      <button style -text aling="center">Enviar</button>
+    </div>
+
+        </form>

@@ -1,7 +1,9 @@
 <?php
 include_once('conexao.php');
+
 $nomep = $_POST['nomep'];
 $id=$_POST['id'];
+
 $sql = "DELETE FROM carrinho  WHERE nomep=$nomep AND id=$id";
 if ($conexao->query($sql) === TRUE) {
  header("Location: carrinho.php?id=$nomep");

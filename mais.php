@@ -66,18 +66,29 @@ div {text-align: center;}
             <input type="text" class="form-control pl-3" name="pesquisa" placeholder="procurar musicas aqui">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
-          <input type="hidden" name="nome" value="nome">
+          <div style='position:absolute;margin-left:250px;margin-top:-52px'>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:20px;border:1px solid #555;float: left;margin:2px">
+          <label>Nome </label>
+            <input type="radio" name="nome" value="nome">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Artista </label>
+            <input type="radio" name="nome" value="artista">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Gênero</label>
+            <input type="radio" name="nome" value="genero">
+          </div></div>
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a href="menu.php" class="nav-link">Menu</a></li>
-	        	<li class="nav-item active"><a href="#" class="nav-link">Mais Sobre o CD</a></li>
+	        	<li class="nav-item active"><a href="#" class="nav-link">Mais Comprados</a></li>
 	        	<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">cd's</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
               	<a class="dropdown-item" href="lancamentos.php">Lançamentos</a>
                 <a class="dropdown-item" href="promocao.php">Promoções</a>
-                <a class="dropdown-item" href="mais_comprados.php">Mais Comprados</a>
                 </div>
             </li>
               <li class="nav-item"><a href="carrinho.php?id=<?php echo $id?>" class="nav-link">Carrinho</a></li>

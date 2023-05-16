@@ -56,17 +56,32 @@ div {text-align: center;}
 				</div>
 			</div>
       </div>
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span>
 	      </button>
-				<form action="pesquisa.php" class="searchform order-lg-last">
+      <form action="pesquisa.php" class="searchform order-lg-last">
           <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" name="pesquisa" placeholder="procurar musicas aqui">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
-          <input type="hidden" name="nome" value="nome">
+          <div style='position:absolute;margin-left:250px;margin-top:-52px'>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:20px;border:1px solid #555;float: left;margin:2px">
+          <label>Nome </label>
+            <input type="radio" name="nome" value="nome">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Artista </label>
+            <input type="radio" name="nome" value="artista">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Gênero</label>
+            <input type="radio" name="nome" value="genero">
+          </div></div>
+          
+           
+     
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">

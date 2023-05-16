@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 10/05/2023 às 23:33
--- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.2.4
+-- Tempo de geração: 27-Jun-2022 às 19:39
+-- Versão do servidor: 10.4.24-MariaDB
+-- versão do PHP: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `carrinho`
+-- Estrutura da tabela `carrinho`
 --
 
 CREATE TABLE `carrinho` (
@@ -34,12 +34,12 @@ CREATE TABLE `carrinho` (
   `nomep` varchar(50) NOT NULL,
   `preco` varchar(11) NOT NULL,
   `imagem` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cds`
+-- Estrutura da tabela `cds`
 --
 
 CREATE TABLE `cds` (
@@ -59,21 +59,21 @@ CREATE TABLE `cds` (
   `comprados` int(250) NOT NULL,
   `img` varchar(250) NOT NULL,
   `midia` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `cds`
+-- Extraindo dados da tabela `cds`
 --
 
 INSERT INTO `cds` (`id`, `nome`, `titulo`, `genero`, `artista`, `tempo`, `ano`, `procedencia`, `disponibilidade`, `descricao`, `preco`, `lancamento`, `promocao`, `comprados`, `img`, `midia`) VALUES
-(1, 'cd1', 'primeiro', 'funk', 'admin', 4.00, '2022-06-23', 'melhor de todos', '100', 'novo', 0.00, 'sim', 'sim', 0, 'uploads/cds.jpg', 'midias/audio.mp3'),
-(2, 'cd2', 'segundo', 'rock', 'admin', 300.00, '2022-06-23', 'otimo', '50', 'novo', 2.00, 'nao', 'nao', 0, 'uploads/cds.jpg', 'midias/audio.mp3'),
-(3, 'cd3', 'teceiro', 'sertanejo', 'admin2', 324.00, '2022-06-23', 'melhor', '200', 'novo', 2.99, 'nao', 'sim', 0, 'uploads/cds.jpg', 'midias/audio.mp3');
+(1, 'cd1', 'primeiro', 'funk', 'admin', '4.00', '2022-06-23', 'melhor de todos', '100', 'novo', '0.00', 'sim', 'sim', 0, 'uploads/cds.jpg', 'midias/audio.mp3'),
+(2, 'cd2', 'segundo', 'rock', 'admin', '300.00', '2022-06-23', 'otimo', '50', 'novo', '2.00', 'nao', 'nao', 0, 'uploads/cds.jpg', 'midias/audio.mp3'),
+(3, 'cd3', 'teceiro', 'sertanejo', 'admin2', '324.00', '2022-06-23', 'melhor', '200', 'novo', '2.99', 'nao', 'sim', 0, 'uploads/cds.jpg', 'midias/audio.mp3');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `playlist`
+-- Estrutura da tabela `playlist`
 --
 
 CREATE TABLE `playlist` (
@@ -83,12 +83,12 @@ CREATE TABLE `playlist` (
   `nome` varchar(100) NOT NULL,
   `img` varchar(250) NOT NULL,
   `midia` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `usuarios`
+-- Estrutura da tabela `usuarios`
 --
 
 CREATE TABLE `usuarios` (
@@ -100,45 +100,45 @@ CREATE TABLE `usuarios` (
   `imagem` varchar(250) NOT NULL,
   `senha` varchar(20) NOT NULL,
   `admin` varchar(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Despejando dados para a tabela `usuarios`
+-- Extraindo dados da tabela `usuarios`
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `telefone`, `email`, `cpf`, `imagem`, `senha`, `admin`) VALUES
-(1, 'admin', 123456789, 'admin@gmail.com', 987654321, 'uploads/perfil.png', 'YWRtaW4=', 'admin');
+(1, 'admin', 123456789, 'admin@gmail.com', 987654321, 'uploads/perfil.png', 'admin', 'admin');
 
 --
 -- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `carrinho`
+-- Índices para tabela `carrinho`
 --
 ALTER TABLE `carrinho`
   ADD PRIMARY KEY (`falso`);
 
 --
--- Índices de tabela `cds`
+-- Índices para tabela `cds`
 --
 ALTER TABLE `cds`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `playlist`
+-- Índices para tabela `playlist`
 --
 ALTER TABLE `playlist`
   ADD PRIMARY KEY (`idid`);
 
 --
--- Índices de tabela `usuarios`
+-- Índices para tabela `usuarios`
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
 
 --

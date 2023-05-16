@@ -11,7 +11,7 @@ div {text-align: center;}
     <meta name="generator" content="Hugo 0.88.1">
     <title>Cadrastar cliente</title>
     </head>
-    <body style="background-image: url(images/bg.jpg);">
+    <body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
         <a href="index.php" >
           <p style="text-align:left 10px;margin: 0px 100px;">Login</p>
         </a>
@@ -35,29 +35,30 @@ div {text-align: center;}
 </head> 
           <div style="margin:3px">
             <label style="margin-left: 20px;color:#fff">Nome</label>
-      <input style="border-radius:10px;background-color:#6666ff" size="3" maxlength="50" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control"  required>
+      <input style="border-radius:10px;background-color:#6666ff" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control"  required>
     </div>
     <div style="margin:3px">
       <label style="margin-left: 25px;color:#fff">Email</label>
-      <input style="border-radius:10px;background-color:#6666ff" size="11" maxlength="50" type="email" name="email" id="email" placeholder="Digite seu email" class="form-control"required>
+      <input style="border-radius:10px;background-color:#6666ff" type="e-mail" name="email" id="email" placeholder="Digite seu email" class="form-control"required>
     </div>
     <div style="margin:3px">
       <label style="margin-left: 20px;color:#fff">Senha</label>
-      <input style="border-radius:10px;background-color:#6666ff" size="8" maxlength="50" type="password" name="senha" id="floatingInput" placeholder="Digite sua senha" class="form-control" required>
+      <input style="border-radius:10px;background-color:#6666ff" type="password" name="senha" id="floatingInput" placeholder="Digite sua senha" class="form-control" required>
     </div>
     <div style="margin:3px">
       <label style="color:#fff">Telefone</label>
-      <input style="border-radius:10px;background-color:#6666ff" size="9" maxlength="50" type="int" name="telefone" id="telefone" placeholder="Digite seu telefone" class="form-control"required>
+      <input style="border-radius:10px;background-color:#6666ff" type="int" name="telefone" id="telefone" placeholder="Digite seu telefone" class="form-control"required>
     </div>
     <div style="margin:3px">
       <label style="margin-left: 37px;color:#fff">CPF</label>
-      <input style="border-radius:10px;background-color:#6666ff" size="8" maxlength="50" type="password" name="cpf" id="floatingInput" placeholder="Digite seu CPF" class="form-control" required>
+      <input style="border-radius:10px;background-color:#6666ff" type="password" name="cpf" id="floatingInput" placeholder="Digite seu CPF" class="form-control" required>
     </div>
     <div style="margin:4px">
-    <input type="hidden" name="tipo" value="cliente">
       <br>
       <button type="submit" class="form-control btn btn-primary submit px-3">Enviar</button>
     </div>
         </form> 
     </body>
   </html>
+
+  

@@ -69,7 +69,7 @@ div {text-align: center;}
           <div style='position:absolute;margin-left:250px;margin-top:-52px'>
           <div style="width:90px;height:25px;background-color:#222244;border-radius:20px;border:1px solid #555;float: left;margin:2px">
           <label>Nome </label>
-            <input type="radio" name="nome" checked value="nome">
+            <input type="radio" name="nome" value="nome">
           </div>
           <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
             <label>Artista </label>
@@ -131,7 +131,7 @@ $tipo_de_pesquisa = $_GET['nome'];
 $pesquisa = $_GET['pesquisa'];
 switch ($tipo_de_pesquisa){
     case "nome": 
-            $sql_code = "SELECT * FROM cds WHERE disponibilidade > 0 and nome LIKE '%$pesquisa%' or genero LIKE '%$pesquisa%' ";
+            $sql_code = "SELECT * FROM cds WHERE disponibilidade > 0 and nome LIKE '%$pesquisa%' ";
             $result = mysqli_query($conexao,$sql_code);
             while($row = mysqli_fetch_assoc($result)) {
               echo "<div style='border-radius:5%;border: 3px solid;margin: 10px 10px; float: left; color:#000; align:center; background-color:#222244';justify-content: center>";

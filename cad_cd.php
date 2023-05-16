@@ -63,7 +63,19 @@ div {text-align: center;}
             <input type="text" class="form-control pl-3" name="pesquisa" placeholder="procurar musicas aqui">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
           </div>
-          <input type="hidden" name="nome" value="nome">
+          <div style='position:absolute;margin-left:250px;margin-top:-52px'>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:20px;border:1px solid #555;float: left;margin:2px">
+          <label>Nome </label>
+            <input type="radio" name="nome" value="nome">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Artista </label>
+            <input type="radio" name="nome" value="artista">
+          </div>
+          <div style="width:90px;height:25px;background-color:#222244;border-radius:10px;border:1px solid #555;float: left;margin:2px">
+            <label>Gênero</label>
+            <input type="radio" name="nome" value="genero">
+          </div></div>
         </form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
@@ -106,8 +118,7 @@ echo"</li>";
   <script src="js/main.js"></script>
 </div>
     </section>
-<div style="background-image: url(images/bg.jpg);background-size: cover; background-repeat: no-repeat">
-  <br>
+<br>
 <form enctype="multipart/form-data" action="cadastrar_cd.php" method="POST" enctype="multipart/form-data">
 <div><input name="id" type="hidden" value="<?php echo $ids ?>"/></div>
 <br>
@@ -174,7 +185,6 @@ echo"</li>";
 <br>
 <div><input type="submit" style="width:300px;height:30px;background-color:#6666ff;border-radius:10px;color:#000;margin-left: 1px" value="Cadastrar"></div> 
 <br> 
-</div>
 </div>
 </body>
 </html>
